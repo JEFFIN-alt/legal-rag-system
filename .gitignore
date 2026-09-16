@@ -1,0 +1,31 @@
+# Environment / secrets
+.env
+.env.*
+*.env
+
+# API keys
+GEMINI_API_KEY
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+
+# ChromaDB
+chroma_db/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+data/processed/
