@@ -1,4 +1,4 @@
-# Cognivault ⚖️
+# Cognivault 
 
 ## Evidence-Grounded Legal RAG System
 
