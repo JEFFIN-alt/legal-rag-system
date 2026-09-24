@@ -14,13 +14,13 @@ The current knowledge base contains the **Bharatiya Nyaya Sanhita (BNS), Bharati
 
 Large language models can generate fluent answers but may produce unsupported or fabricated information.
 
-Cognivault addresses this problem by retrieving relevant passages from a controlled legal document collection and supplying those passages to the language model as evidence.
+LEGAL RAG addresses this problem by retrieving relevant passages from a controlled legal document collection and supplying those passages to the language model as evidence.
 
 The system follows the principle:
 
 > **Retrieve first. Generate second.**
 
-Instead of asking the LLM to answer from its general knowledge, Cognivault provides retrieved document evidence and instructs the model to ground its response in that evidence.
+Instead of asking the LLM to answer from its general knowledge, LEGAL RAG provides retrieved document evidence and instructs the model to ground its response in that evidence.
 
 ---
 
@@ -77,7 +77,7 @@ Instead of asking the LLM to answer from its general knowledge, Cognivault provi
 
 ## 🔎 Retrieval Pipeline
 
-Cognivault uses a multi-stage retrieval architecture.
+LEGAL RAG uses a multi-stage retrieval architecture.
 
 ### 1. Semantic Retrieval
 
@@ -175,7 +175,7 @@ The generated processed JSON files and ChromaDB database are intentionally exclu
 What is the charge for attempt to murder?
 ```
 
-### Cognivault response structure
+### LEGAL RAG response structure
 
 ```text
 ANSWER
@@ -235,7 +235,7 @@ The system successfully retrieved relevant BNS provisions concerning attempt to 
 ## 📁 Project Structure
 
 ```text
-cognivault/
+legal-rag-system/
 │
 ├── data/
 │   └── documents/
@@ -280,7 +280,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/JEFFIN-alt/legal-rag-system.git
-cd cognivault
+cd legal-rag-system
 ```
 
 Create the Conda environment:
@@ -300,7 +300,7 @@ pip install -r requirements.txt
 
 ## 🔑 Gemini API Key
 
-Cognivault requires a Gemini API key for answer generation.
+LEGAL RAG requires a Gemini API key for answer generation.
 
 Set the key as an environment variable:
 
@@ -318,7 +318,7 @@ The API key should **never be committed to GitHub**.
 
 ---
 
-## ▶️ Running Cognivault
+## ▶️ Running LEGAL RAG
 
 ### Step 1 — Process documents
 
@@ -338,7 +338,7 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python src/indexer.py
 
 This generates embeddings and stores them in ChromaDB.
 
-### Step 3 — Run Cognivault
+### Step 3 — Run LEGAL RAG
 
 ```bash
 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m src.pipeline
@@ -347,10 +347,10 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m src.pipeline
 The system will prompt:
 
 ```text
-Ask Cognivault (type 'exit' to quit):
+Ask LEGAL RAG (type 'exit' to quit):
 ```
 
-Enter a legal question and Cognivault will retrieve, rerank, expand, and generate an evidence-grounded response.
+Enter a legal question and LEGAL RAG will retrieve, rerank, expand, and generate an evidence-grounded response.
 
 ---
 
@@ -394,7 +394,7 @@ A subsequent end-to-end test successfully retrieved BNS material concerning **at
 
 ## 🚧 Current Limitations
 
-Cognivault is currently a **research prototype / MVP**.
+LEGAL RAG is currently a **research prototype / MVP**.
 
 Current limitations include:
 
@@ -465,7 +465,7 @@ A web interface can provide:
 
 ## ⚖️ Disclaimer
 
-Cognivault is an **academic/research project intended for legal information retrieval and decision-support experimentation**.
+LEGAL RAG is an **academic/research project intended for legal information retrieval and decision-support experimentation**.
 
 It is not a substitute for professional legal advice, legal representation, or judicial determination.
 
@@ -488,4 +488,4 @@ https://github.com/JEFFIN-alt
 ## 📄 License
 
 License information will be added in a future version.
-::[Open Cognivault on GitHub](https://github.com/JEFFIN-alt/cognivault?utm_source=chatgpt.com)
+::[Open LEGAL RAG on GitHub](https://github.com/JEFFIN-alt/legal-rag-system)
