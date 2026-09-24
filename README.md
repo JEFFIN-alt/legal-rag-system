@@ -283,7 +283,8 @@ git clone https://github.com/JEFFIN-alt/legal-rag-system.git
 cd legal-rag-system
 ```
 
-Create the Conda environment:
+Create the Conda environment:( this is my own conda enviornment included many tools helpful for ai/ml/dl projects)
+you can install it via :github.com/JEFFIN-alt/ai-lab
 
 ```bash
 conda create -n ai-lab python=3.12
