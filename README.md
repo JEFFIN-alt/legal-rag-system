@@ -1,8 +1,8 @@
-# Cognivault 
+# LEGAL RAG
 
 ## Evidence-Grounded Legal RAG System
 
-Cognivault is a **Retrieval-Augmented Generation (RAG) system for legal document analysis and question answering**.
+LEGAL RAG is a **Retrieval-Augmented Generation (RAG) system for legal document analysis and question answering**.
 
 It combines semantic search, BM25 lexical retrieval, Reciprocal Rank Fusion (RRF), cross-encoder reranking, context expansion, and Gemini-based generation to produce answers grounded in retrieved legal documents.
 
