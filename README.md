@@ -279,7 +279,7 @@ cognivault/
 Clone the repository:
 
 ```bash
-git clone https://github.com/JEFFIN-alt/cognivault.git
+git clone https://github.com/JEFFIN-alt/legal-rag-system.git
 cd cognivault
 ```
 
